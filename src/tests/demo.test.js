@@ -1,8 +1,12 @@
-test('should first', () => {
-    const isActive = true;
+describe('pruebas en el archivo demo.test.js', () => {
+    test('deben de ser iguales los mensajes', () => {
 
-    if(isActive){
-        throw new Error('No esta activo')
-    }
+        const mensajes = 'Hola mundo'
+    
+        const mensajes2 = `Hola mundo`
+    
+        expect(mensajes).toBe(mensajes2)
+    
+     })
+})
 
- })
