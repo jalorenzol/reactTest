@@ -8,5 +8,11 @@ describe('Pruebas em 02-template-string.js', () => {
          const saludo = getSaludo(nombre)
 
          expect(saludo).toBe('Hola ' + nombre)
+    });
+    test('Debe devolver Hola Carlos si no hay argumento', () => {
+
+        const saludo = getSaludo()
+
+        expect(saludo).toBe('Hola Carlos')
     })
 })

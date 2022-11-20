@@ -1,5 +1,10 @@
 
 // Desestructuración
+
+import React from "react";
+
+
+
 // Asignación Desestructurante
 const persona = {
     nombre: 'Tony',
@@ -29,9 +34,20 @@ const usContext = ({ clave, nombre, edad, rango = 'Capitán' }) => {
 
 }
 
+const retornarNombre = () => {
+    const [nombre, setNombre] = useState('');
+
+    setNombre('Roberto')
+
+    console.log(nombre)
+}
+
+retornarNombre()
+
+
+
 const { nombreClave, anios, latlng: { lat, lng } } = usContext( persona );
 
-console.log(nombreClave, anios);
-console.log( lat, lng );
+
 
 
