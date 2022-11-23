@@ -1,4 +1,5 @@
-import { getHeroeById } from './bases/08-imp-exp'
+import { getHeroeById } from "./08-imp-exp";
+
 
 
 
@@ -9,7 +10,7 @@ const getHeroeByIdAsync = ( id ) => {
         setTimeout( () =>  {
             // Tarea
             // importen el 
-            const p1 = getHeroeById( id );
+            const p1 = getHeroeById(id);
             if ( p1 ) {
                 resolve( p1 );
             } else {
@@ -21,5 +22,7 @@ const getHeroeByIdAsync = ( id ) => {
 
 
 }
+
+export default getHeroeByIdAsync
 
 
